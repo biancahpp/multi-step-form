@@ -1,0 +1,125 @@
+{
+    "steps": [
+        {
+            "name": "Step 1",
+            "description": "Your Info",
+            "title": "Personal info",
+            "subtitle": "Please provide your name, email address, and phone number.",
+            "textFields": {
+                "fields": [
+                    {
+                        "name": "Name",
+                        "required": false,
+                        "placeholder": "e.g. Stephen King"
+                    },
+                    {
+                        "name": "Email Address",
+                        "required": false,
+                        "placeholder": "e.g. stephenking@lorem.com"
+                    },
+                    {
+                        "name": "Phone Number",
+                        "required": false,
+                        "placeholder": "e.g. +1 234 567 890"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Step 2",
+            "description": "Select Plan",
+            "title": "Select your plan",
+            "subtitle": "You have the option of monthly or yearly billing.",
+            "plans": {
+                "yearly": [
+                    {
+                        "name": "Arcade",
+                        "price": "$9/mo"
+                    },
+                    {
+                        "name": "Advanced",
+                        "price": "$12/mo"
+                    },
+                    {
+                        "name": "Pro",
+                        "price": "$15/mo"
+                    }
+                ],
+                "monthly": [
+                    {
+                        "name": "Arcade",
+                        "price": "$90/yr",
+                        "footnote": "2 months free"
+                    },
+                    {
+                        "name": "Advanced",
+                        "price": "$120/yr",
+                        "footnote": "2 months free"
+                    },
+                    {
+                        "name": "Pro",
+                        "price": "$150/yr",
+                        "footnote": "2 months free"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Step 3",
+            "description": "Add-ons",
+            "title": "Pick add-ons",
+            "subtitle": "Add-ons help enhance your gaming experience.",
+            "addOns": {
+                "yearly": [
+                    {
+                        "title": "Online service",
+                        "subtitle": "Access to multiplayer games",
+                        "price": "+$10/yr"
+                    },
+                    {
+                        "title": "Larger storage",
+                        "subtitle": "Extra 1TB of cloud save",
+                        "price": "+$20/yr"
+                    },
+                    {
+                        "title": "Customizable profile",
+                        "subtitle": "Custom theme on your profile",
+                        "price": "+$20/yr"
+                    }
+                ],
+                "monthly": [
+                    {
+                        "title": "Online service",
+                        "subtitle": "Access to multiplayer games",
+                        "price": "+$1/mo"
+                    },
+                    {
+                        "title": "Larger storage",
+                        "subtitle": "Extra 1TB of cloud save",
+                        "price": "+$2/mo"
+                    },
+                    {
+                        "title": "Customizable profile",
+                        "subtitle": "Custom theme on your profile",
+                        "price": "+$2/mo"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Step 4",
+            "description": "Summary",
+            "title": "Finishing up",
+            "subtitle": "Double-check everything looks OK before confirming.",
+            "priceLabel": {
+                "yearly": "Total (per year)",
+                "monthly": "Total (per month)"
+
+            }
+        }
+    ],
+    "thankYouPage": {
+        "title": "Thank you!",
+        "subtitle": "Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com."
+    }
+}
