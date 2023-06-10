@@ -5,25 +5,23 @@
             "description": "Your Info",
             "title": "Personal info",
             "subtitle": "Please provide your name, email address, and phone number.",
-            "textFields": {
-                "fields": [
-                    {
-                        "name": "Name",
-                        "required": false,
-                        "placeholder": "e.g. Stephen King"
-                    },
-                    {
-                        "name": "Email Address",
-                        "required": false,
-                        "placeholder": "e.g. stephenking@lorem.com"
-                    },
-                    {
-                        "name": "Phone Number",
-                        "required": false,
-                        "placeholder": "e.g. +1 234 567 890"
-                    }
-                ]
-            }
+            "textFields":  [
+                {
+                    "name": "Name",
+                    "required": false,
+                    "placeholder": "e.g. Stephen King"
+                },
+                {
+                    "name": "Email Address",
+                    "required": false,
+                    "placeholder": "e.g. stephenking@lorem.com"
+                },
+                {
+                    "name": "Phone Number",
+                    "required": false,
+                    "placeholder": "e.g. +1 234 567 890"
+                }
+            ]
         },
         {
             "name": "Step 2",
@@ -118,7 +116,7 @@
             }
         }
     ],
-    "thankYouPage": {
+    "thankYou": {
         "title": "Thank you!",
         "subtitle": "Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com."
     }
