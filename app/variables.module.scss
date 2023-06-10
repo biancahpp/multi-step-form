@@ -1,5 +1,10 @@
+// Colors
 $global-background: #EFF5FF;
 
+// Breakpoints
+$tablet: 769px;
+
 :export {
-    globalBackground: $global-background
+    globalBackground: $global-background;
+    tablet: $tablet;
 }

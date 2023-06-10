@@ -1,9 +1,13 @@
+@import '../variables.module.scss';
+
 .main {
     height: 100%;
     width: 100%;
     background-image: url("/bg-sidebar-mobile.svg");
+    background-size: 100%;
     background-repeat: no-repeat;
-    @media only screen and (min-width: 376px) {
+
+    @media only screen and (min-width: $tablet) {
         background-image: none;
     }
 }
