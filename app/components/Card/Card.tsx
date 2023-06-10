@@ -1,9 +1,5 @@
-import styles from './card.module.scss'
+import styles from "./card.module.scss";
 
 export default function Card() {
-    return (
-      <div className={styles.card}>
-        Hello
-      </div>
-    )
-  }
+  return <div className={styles.card}>Hello</div>;
+}

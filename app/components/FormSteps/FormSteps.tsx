@@ -1,9 +1,10 @@
-import styles from './card.module.scss'
+import styles from "./form-step.module.scss";
 
-export default function FormSteps() {
-    return (
-      <div className={styles.card}>
-        Hello
-      </div>
-    )
-  }
+interface Props {
+  step: number;
+  selected: boolean;
+}
+
+export default function FormSteps({ step }: Props) {
+  return <button className={styles.step}>{step}</button>;
+}

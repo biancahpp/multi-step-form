@@ -1,10 +1,14 @@
 // Colors
-$global-background: #EFF5FF;
+$global-background: #eff5ff;
+$sky-blue: #bee2fd;
+$denim: #022959;
 
 // Breakpoints
 $tablet: 769px;
 
 :export {
-    globalBackground: $global-background;
-    tablet: $tablet;
+  globalBackground: $global-background;
+  tablet: $tablet;
+  skyBlue: $sky-blue;
+  denim: $denim;
 }
