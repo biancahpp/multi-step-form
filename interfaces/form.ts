@@ -3,7 +3,7 @@ export interface Form {
   thankYou: FormThankYou;
 }
 
-interface FormStep {
+export interface FormStep {
   name: string;
   description: string;
   title: string;

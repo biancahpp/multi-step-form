@@ -2,13 +2,20 @@
 $global-background: #eff5ff;
 $sky-blue: #bee2fd;
 $denim: #022959;
+$white: #ffffff;
 
 // Breakpoints
 $tablet: 769px;
+
+// Spacing
+
+$sm: 16px;
+$md: 32px;
 
 :export {
   globalBackground: $global-background;
   tablet: $tablet;
   skyBlue: $sky-blue;
   denim: $denim;
+  white: $white;
 }

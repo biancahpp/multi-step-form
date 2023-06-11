@@ -7,6 +7,9 @@
   background-size: 100%;
   background-repeat: no-repeat;
 
+  display: flex;
+  flex-direction: column;
+
   @media only screen and (min-width: $tablet) {
     background-image: none;
   }
@@ -14,4 +17,6 @@
 
 .steps {
   display: flex;
+  align-self: center;
+  padding-top: $md;
 }
