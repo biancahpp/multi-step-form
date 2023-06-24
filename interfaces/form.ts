@@ -1,21 +1,21 @@
-export interface Form {
-  steps: FormStep[];
-  thankYou: FormThankYou;
+export interface FormI {
+  steps: FormStepI[];
+  thankYou: FormThankYouI;
 }
 
-export interface FormStep {
+export interface FormStepI {
   name: string;
   description: string;
   title: string;
   subtitle: string;
-  textFields?: FormTextField[];
+  textFields?: FormTextFieldI[];
   plans?: {
-    yearly: FormPlan[];
-    monthly: FormPlan[];
+    yearly: FormPlanI[];
+    monthly: FormPlanI[];
   };
   addOns?: {
-    yearly: FormAddOn[];
-    monthly: FormAddOn[];
+    yearly: FormAddOnI[];
+    monthly: FormAddOnI[];
   };
   priceLabel?: {
     yearly: string;
@@ -23,25 +23,26 @@ export interface FormStep {
   };
 }
 
-interface FormTextField {
+interface FormTextFieldI {
   name: string;
   required: boolean;
   placeholder: string;
+  type: string;
 }
 
-interface FormPlan {
+interface FormPlanI {
   name: string;
   price: string;
   footnote?: string;
 }
 
-interface FormAddOn {
+interface FormAddOnI {
   title: string;
   subtitle: string;
   price: string;
 }
 
-interface FormThankYou {
+interface FormThankYouI {
   title: string;
   subtitle: string;
 }

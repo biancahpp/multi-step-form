@@ -9,17 +9,20 @@
         {
           "name": "Name",
           "required": false,
-          "placeholder": "e.g. Stephen King"
+          "placeholder": "e.g. Stephen King",
+          "type": "text"
         },
         {
           "name": "Email Address",
           "required": false,
-          "placeholder": "e.g. stephenking@lorem.com"
+          "placeholder": "e.g. stephenking@lorem.com",
+          "type": "email"
         },
         {
           "name": "Phone Number",
           "required": false,
-          "placeholder": "e.g. +1 234 567 890"
+          "placeholder": "e.g. +1 234 567 890",
+          "type": "tel"
         }
       ]
     },

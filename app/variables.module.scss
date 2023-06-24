@@ -3,19 +3,29 @@ $global-background: #eff5ff;
 $sky-blue: #bee2fd;
 $denim: #022959;
 $white: #ffffff;
+$grey: #9699aa;
 
 // Breakpoints
 $tablet: 769px;
 
 // Spacing
-
+$xs: 12px;
 $sm: 16px;
 $md: 32px;
+$border-radius: 10px;
+
+// Font sizing
+$font-xs: 12px;
+$font-lg: 24px;
 
 :export {
   globalBackground: $global-background;
   tablet: $tablet;
   skyBlue: $sky-blue;
   denim: $denim;
+  grey: $grey;
   white: $white;
+  border-radius: $border-radius;
+  font-lg: $font-lg;
+  font-xs: $font-xs;
 }

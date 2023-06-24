@@ -1,23 +1,24 @@
-import { setClass } from "@/utils/utils";
-import styles from "./form-step.module.scss";
+"use client";
+import styles from "./form-steps.module.scss";
+import FormStep from "./FormStep/FormStep";
+import { useFormStore } from "@/store/form-store";
 
-interface Props {
-  step: number;
-  selected: boolean;
-  setSelectedStep: (step: number) => void;
-}
-
-export default function FormSteps({ step, selected, setSelectedStep }: Props) {
+export default function FormSteps() {
+  const { form, selectedStep, setSelectedStep } = useFormStore((state) => ({
+    form: state.form,
+    selectedStep: state.selectedStep,
+    setSelectedStep: state.setSelectedStep,
+  }));
   return (
-    <button
-      onClick={() => setSelectedStep(step)}
-      className={
-        selected
-          ? setClass([styles.step, styles.selected])
-          : setClass([styles.step])
-      }
-    >
-      {step}
-    </button>
+    <section className={styles.steps}>
+      {form.steps.map((step, index) => (
+        <FormStep
+          key={step.description}
+          step={index + 1}
+          selected={step.name === selectedStep.name}
+          setSelectedStep={setSelectedStep}
+        />
+      ))}
+    </section>
   );
 }

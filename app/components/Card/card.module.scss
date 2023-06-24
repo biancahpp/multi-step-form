@@ -1,6 +1,26 @@
+@import "../../variables.module.scss";
+
 .card {
-  background-color: aquamarine;
+  background-color: white;
   padding: 32px 24px;
+  width: 90vw;
+  align-self: center;
+  border-radius: $border-radius;
+  color: $denim;
+  h1 {
+    font-size: $font-lg;
+    padding-bottom: $xs;
+  }
+  span {
+    font-size: $sm;
+    color: $grey;
+  }
+  label {
+    font-size: $font-xs;
+    color: $denim;
+    display: block;
+  }
+
   @media only screen and (min-width: 768px) {
     padding: 16px;
   }
