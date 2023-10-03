@@ -23,7 +23,7 @@ export interface FormStepI {
   };
 }
 
-interface FormTextFieldI {
+export interface FormTextFieldI {
   name: string;
   required: boolean;
   placeholder: string;

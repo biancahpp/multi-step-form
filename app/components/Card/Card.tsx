@@ -1,26 +1,31 @@
 "use client";
 import { useFormStore } from "@/store/form-store";
 import styles from "./card.module.scss";
+import TextInput from "../TextInput/TextInput";
 
 export default function Card() {
-  const { selectedStep, setSelectedStep } = useFormStore((state) => ({
+  const { selectedStep } = useFormStore((state) => ({
     selectedStep: state.selectedStep,
-    setSelectedStep: state.setSelectedStep,
   }));
 
   return (
-    <div className={styles.card}>
-      <h1>{selectedStep.title}</h1>pipo
+    <section className={styles.card}>
+      <h1>{selectedStep.title}</h1>
       <span>{selectedStep.subtitle}</span>
       <div>
         {selectedStep.textFields &&
-          selectedStep.textFields.map((field) => (
-            <>
-              <label htmlFor={field.name}>{field.name}</label>
-              <input type={field.type} id={field.name} name={field.name} />
-            </>
+          selectedStep.textFields.map((field, index) => (
+            <TextInput
+              field={field}
+              isLast={
+                selectedStep.textFields &&
+                selectedStep.textFields.length - 1 === index
+                  ? true
+                  : false
+              }
+            />
           ))}
       </div>
-    </div>
+    </section>
   );
 }
