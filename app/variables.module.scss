@@ -4,6 +4,7 @@ $sky-blue: #bee2fd;
 $denim: #022959;
 $white: #ffffff;
 $grey: #9699aa;
+$light-grey: #d6d9e6;
 
 // Breakpoints
 $tablet: 769px;
@@ -17,6 +18,7 @@ $border-radius: 10px;
 
 // Font sizing
 $font-xs: 12px;
+$font-sm: 16px;
 $font-lg: 24px;
 
 :export {
@@ -25,8 +27,10 @@ $font-lg: 24px;
   skyBlue: $sky-blue;
   denim: $denim;
   grey: $grey;
+  light-grey: $light-grey;
   white: $white;
   border-radius: $border-radius;
   font-lg: $font-lg;
+  font-sm: $font-sm;
   font-xs: $font-xs;
 }

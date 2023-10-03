@@ -12,13 +12,10 @@
     padding-bottom: $xs;
   }
   span {
-    font-size: $sm;
+    display: inline-block;
+    font-size: $font-sm;
     color: $grey;
-  }
-  label {
-    font-size: $font-xs;
-    color: $denim;
-    display: block;
+    margin-bottom: $sm;
   }
 
   @media only screen and (min-width: 768px) {

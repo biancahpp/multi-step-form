@@ -1,11 +1,22 @@
 @import "../../variables.module.scss";
 
 .label {
+  font-size: $font-xs;
+  color: $denim;
+  display: block;
   margin-bottom: $xxs;
 }
 
 .input {
+  width: 100%;
   margin-bottom: $sm;
+  padding: $xs $sm;
+  border-radius: $xxs;
+  border: 1px solid $light-grey;
+  &::placeholder {
+    font-size: $font-sm;
+    font-weight: 500;
+  }
 }
 
 .isLast {
